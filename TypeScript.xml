@@ -1,0 +1,191 @@
+<templateSet group="TypeScript">
+  <template name="ref" value="/// &lt;reference path=&quot;$path$&quot; /&gt;" description="TypeScript interbal module reference" toReformat="true" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+      <option name="HAML" value="false" />
+      <option name="JADE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="DART" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afunc" value="($PARAM$) =&gt; {&#10;    $END$&#10;}" description="arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cl" value="console.log($PARAM$);" description="Console.log" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="me" value="$methodName$ ($argument$):$returnType$ {&#10;    $END$&#10;}" description="class method" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="returnType" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="cla" value="class $ClassName$ {&#10;    $END$&#10;}" description="Class" toReformat="false" toShortenFQNames="true">
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="mo" value="module $ModuleName$ {&#10;    $END$&#10;}" description="module definition" toReformat="false" toShortenFQNames="true">
+    <variable name="ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="im" value="import $PARAM$;" description="Import" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($COND$) {&#10;    $END$&#10;}" description="if" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ifel" value="if ($COND$) {&#10;    $END$&#10;}&#10;else {&#10;    &#10;}" description="ifel" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="ter" value="$COND$ ? $EXPR$ : $END$;" description="ternary operator" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="p" value="$PROP$: $VAL$" toReformat="false" toShortenFQNames="true">
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="mocla" value="module $ModuleName$ {&#10;    export class $ClassName$ {&#10;        constructor ($argument$) {&#10;           $END$&#10;        }&#10;    }&#10;}" description="mudule with class" toReformat="false" toShortenFQNames="true">
+    <variable name="ModuleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="argument" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for (var $INDEX$ = 0, len = $ARRAY$.length; $INDEX$ &lt; len; $INDEX$++) {&#10;    var $VAR$ = $ARRAY$[$INDEX$];&#10;    $END$&#10;}" description="for loop" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="forin" value="for ($STATEMENT1$ in $STATEMENT2$) {&#10;    $END$&#10;}" description="for in loop" toReformat="false" toShortenFQNames="true">
+    <variable name="STATEMENT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="while" value="while ($CONDITION$) {&#10;    $END$&#10;}" description="while loop" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="dowhile" value="do {&#10;    $END$&#10;}&#10;while ($CONDITION$);" description="do while loop" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="switch($EXPRESION$) {&#10;    case $CASE$:&#10;        $END$&#10;        break;&#10;}" description="switch block" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPRESION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="case" value="case $CASE$:&#10;    $END$&#10;    break;&#10;" description="case block" toReformat="false" toShortenFQNames="true">
+    <variable name="CASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="rfor" value="for (var $INDEX$ = $ARRAY$.length - 1; $INDEX$ &gt;= 0; $INDEX$--) {&#10;    var $VAR$ = $ARRAY$[$INDEX$];&#10;    $END$&#10;}" description="reverse for loop" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="clw" value="console.log($SELECTION$);" description="Console log wrap" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="getset" value="get $Name$ ():$Type$ {&#10;   return $Property$;&#10;}&#10;set $Name$ ($Arg$:$Type$) {&#10;  $Property$ = $Arg$; &#10;}" description="generates getter and setter combo" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Property" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="lazyget" value="get $SELECTION$ ():$RetunType$ {&#10;   if(!this._$SELECTION$) {&#10;        this._$SELECTION$ = new $RetunType$();&#10;   }&#10;   return this._$SELECTION$;&#10;}" description="lazzy getter" toReformat="false" toShortenFQNames="true">
+    <variable name="RetunType" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="get" value="get $Name$ ():$Type$ {&#10;   return $Property$;&#10;}&#10;" description="getter" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Property" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="set" value="set $Name$ ($Arg$:$Type$) {&#10;  $Property$ = $Arg$; &#10;}" description="setter" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Arg" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Property" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+</templateSet>
