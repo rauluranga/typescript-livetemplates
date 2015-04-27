@@ -51,7 +51,7 @@ class method.
 ####mo
 module definition.
 
-####mo
+####mocla
 module and class definition.
 
 ####p
