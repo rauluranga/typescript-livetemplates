@@ -10,6 +10,12 @@ OS X: `~/Library/Preferences/<product name><version number>/templates`.
 
 clone this repository and then copy `TypeScript.xml` in to the templates directory.
 
+or if you have OSX with WebStorm 10 installed and believe in me, run the following shell script:
+
+```
+$ bash -c "$(curl -fsSL raw.github.com/rauluranga/typescript-livetemplates/master/bin/install)"
+```
+
 ###Live Templates
 
 ####afunc
