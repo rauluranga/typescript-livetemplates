@@ -188,4 +188,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="promise" value="return new Promise&lt;$STATEMENT1$&gt;((resolve, reject) =&gt; {&#10;    $END$&#10;});" description="Promise wrapper with resolve and reject" toReformat="false" toShortenFQNames="true">
+    <variable name="STATEMENT1" expression="" defaultValue="string" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
