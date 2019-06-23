@@ -1,6 +1,6 @@
-#TypeScript Live Templates 
+# TypeScript Live Templates 
 
-###Installation
+### Installation
 
 Live templates are stored in the following location:
 
@@ -16,63 +16,63 @@ or if you have OSX with WebStorm 10 installed and you trust in me, run the follo
 $ bash -c "$(curl -fsSL raw.github.com/rauluranga/typescript-livetemplates/master/bin/macosx-install.sh)"
 ```
 
-###Live Templates
+### Live Templates
 
-####afunc
+#### afunc
 arrow function.
 
-####cl
+#### cl
 `console.log` call
 
-####cla
+#### cla
 create new class.
 
-####clw
+#### clw
 sorrund with (alt + cmd + t) `console.log`
 
-####dowhile
+#### dowhile
 do while loop.
 
-####forin
+#### forin
 for in loop.
 
-####get
+#### get
 getter block.
 
-####getset
+#### getset
 getter and setter blocks.
 
-####if
+#### if
 IF block.
 
-####ifel
+#### ifel
 IF ELSE block.
 
-####lazyget
+#### lazyget
 lazy getter.
 
-####me
+#### me
 class method.
 
-####mo
+#### mo
 module definition.
 
-####mocla
+#### mocla
 module and class definition.
 
-####p
+#### p
 class property declaration.
 
-####ref
+#### ref
 class reference.
 
-####rfor
+#### rfor
 reverse for loop.
 
-####set
+#### set
 setter block.
 
-####ter
+#### ter
 ternary operator.
 
 
